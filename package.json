@@ -5,12 +5,16 @@
   "repository": "babel",
   "author": "wagner",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.3.1"
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-loader": "^8.0.5",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
   },
   "scripts": {
-    "dev": "babel ./desestruturacao/main.js -o ./desestruturacao/bundle.js -w"
+    "dev": "babel ./rest_spread/main.js -o ./rest_spread/bundle.js -w"
   }
 }
